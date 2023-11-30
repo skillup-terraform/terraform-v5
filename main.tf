@@ -1,6 +1,6 @@
 
 resource "aws_security_group" "terra-sg-01" {
-  name = "terra-sg-today-01"
+  name = "terra-sg-today-02"
   description = "today class"
   vpc_id = ""
   ingress {
