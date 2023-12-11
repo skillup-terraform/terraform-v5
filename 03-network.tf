@@ -8,7 +8,7 @@ resource "azurerm_subnet" "name" {
   name = var.subnet_name
   resource_group_name = azurerm_resource_group.terra_rg.name
   virtual_network_name = azurerm_virtual_network.terra_vm_network.name
-  address_prefixes = [ "10.0.1.0/24" ]
+  address_prefixes = var.address_prefixes
 }
 
 resource "azurerm_virtual_network" "terra_vm_network" {

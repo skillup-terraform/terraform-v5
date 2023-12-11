@@ -37,3 +37,8 @@ variable "resource_tags" {
     "env" = "dev"
   }
 }
+
+variable "address_prefixes" {
+ type = list(string)
+ default = [ "10.0.1.0/24" ]
+}
